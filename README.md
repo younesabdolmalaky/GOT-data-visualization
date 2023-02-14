@@ -30,6 +30,41 @@ Filming Duration - Filming Duration of the Season
 Novel(s) Adapted - Adapted from which Novel(s)
 Synopsis - Synopsis of the Episode
 
+## code
+The given code involves various data visualization techniques used to analyze the Game of Thrones dataset. The main objective of the analysis is to understand the factors affecting the popularity of the TV series.
+The code starts with importing necessary libraries such as Pandas, Matplotlib, Numpy, Seaborn, and Bokeh. It reads the 'Game_of_Thrones.csv' file and creates a DataFrame named df, which contains various columns such as Season, Episode, Director, Writer, Ratings, and Viewership data of the entire series.
+Next, the code creates a pie chart using the Matplotlib library. The pie chart displays the percentage of episodes in each season of the Game of Thrones series. The chart is created by extracting the unique season numbers and then using the value_counts function to find the number of episodes in each season. Finally, the pie chart is plotted with the help of the plt.pie function.
+
+![download (9)](https://user-images.githubusercontent.com/75095471/218714336-f44c43b0-09d4-4199-a340-c057bf867bd6.png)
+
+Further, the code performs some data preprocessing by scaling the 'Rotten Tomatoes Rating (Percentage)' column values between 0 and 10 and creating a new 'total_score' column in the DataFrame by adding the IMDb, Rotten Tomatoes, and Metacritic ratings. Additionally, it renames some column names for better understanding.
+
+![image](https://user-images.githubusercontent.com/75095471/218714502-8e64cfbe-a637-4a58-aed1-ec6d42cc9a15.png)
+
+
+Next, the code creates a scatter plot with the help of Bokeh library. The scatter plot shows the relationship between the episode number and the number of viewers, along with the total score of each episode. The scatter plot uses the 'No. of Episode (Overall)' and 'U.S. Viewers (Millions)' columns for the x and y-axis respectively. It also plots a line graph that represents the total score of each episode.
+The scatter plot also uses a HoverTool function to provide additional information about each episode. The HoverTool displays the 'Directed by', 'Written by', 'Season', and 'Episode' data of each episode when the cursor is moved over the respective point on the scatter plot.
+Further, the code creates a heatmap with the help of the Seaborn library. The heatmap displays the correlation between the 'No. of Episode (Overall)', 'U.S. Viewers (Millions)', and 'total_score' columns. The heatmap uses the corr function of the DataFrame to find the correlation coefficient and annotates the values in each cell of the heatmap.
+
+![image](https://user-images.githubusercontent.com/75095471/218714793-c392ee68-911e-4978-8494-77afb66e1d71.png)
+
+
+
+Finally, the code creates a horizontal bar chart with the help of the Bokeh library. The bar chart displays the average total score of each director who directed the episodes of the Game of Thrones series. The chart uses the 'Director', 'total_score', and 'counts' columns of the DataFrame. It sorts the data based on the 'total_score' column and plots the average score of each director. The HoverTool function displays the number of episodes each director has directed.
+
+![image](https://user-images.githubusercontent.com/75095471/218714939-7d080035-01eb-434b-ac11-42c0d7ad402e.png)
+
+
+
+Lastly, the code creates a vertical bar chart with the help of the Bokeh library. The vertical bar chart displays the average total score of each season of the Game of Thrones series. The chart uses the groupby function of the DataFrame to group the data based on the 'Season' column and calculates the average total score for each season. Finally, the chart plots the data with the help of the vbar function of the Bokeh library.
+
+![image](https://user-images.githubusercontent.com/75095471/218715032-49d3f8dc-bf18-4c85-b980-b34517bec517.png)
+
+
+
+In conclusion, the given code provides a detailed data analysis of the Game of Thrones TV series. It uses various data visualization techniques to identify the factors affecting the popularity of the series. The analysis shows that the number of episodes, viewership, and total score of each episode have a strong correlation with the popularity of the series. The code also identifies the most popular season, director, and episode of the Game of Thrones series.
+
+
 ## Acknowledgement
 This Dataset is created from Wikipedia. Also, the ratings are taken from IMDb, Rotten Tomatoes, Metacritic. If you want to learn more, you can visit the above-mentioned Websites.
 
