@@ -59,7 +59,7 @@ A correlation coefficient is a statistical measure of the degree to which change
 
 Finally, the code creates a horizontal bar chart with the help of the Bokeh library. The bar chart displays the average total score of each director who directed the episodes of the Game of Thrones series. The chart uses the 'Director', 'total_score', and 'counts' columns of the DataFrame. It sorts the data based on the 'total_score' column and plots the average score of each director. The HoverTool function displays the number of episodes each director has directed.
 
-![image](https://user-images.githubusercontent.com/75095471/218714939-7d080035-01eb-434b-ac11-42c0d7ad402e.png)
+![image](https://user-images.githubusercontent.com/75095471/218736091-f671b655-a0b1-4b48-9a68-777e48fa9421.png)
 
 It can be seen that Neil Marshall is the first, but the number of episodes made by him is two, but Alex Graves has made six episodes and the average score is second. It can be said that Alex Graves was the most worthy director of this series (according to scores).
 
