@@ -1,3 +1,8 @@
+
+# game of thrones data visualization
+![game-of-thrones-92acb30ilmkjbmu9](https://user-images.githubusercontent.com/75095471/218716069-ec64bdf9-5467-4169-8891-3e2716c2bb0c.jpg)
+
+
 # About Dataset
 ## Context
 Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
@@ -41,6 +46,8 @@ Further, the code performs some data preprocessing by scaling the 'Rotten Tomato
 
 ![image](https://user-images.githubusercontent.com/75095471/218714502-8e64cfbe-a637-4a58-aed1-ec6d42cc9a15.png)
 
+From this chart, it can be seen that as the episodes of the series go forward, it gains more fans (viewers), but another thing that is clearly evident is the sharp drop of the series from season 7 onwards, despite the fact that the series has more viewers in the seasons 7 and 8, but the downward trend does not stop, which can be the reason for the lack of motivation for the series staff, because the series has found its viewers and the upward trend of viewers has not stopped either.
+
 
 Next, the code creates a scatter plot with the help of Bokeh library. The scatter plot shows the relationship between the episode number and the number of viewers, along with the total score of each episode. The scatter plot uses the 'No. of Episode (Overall)' and 'U.S. Viewers (Millions)' columns for the x and y-axis respectively. It also plots a line graph that represents the total score of each episode.
 The scatter plot also uses a HoverTool function to provide additional information about each episode. The HoverTool displays the 'Directed by', 'Written by', 'Season', and 'Episode' data of each episode when the cursor is moved over the respective point on the scatter plot.
@@ -48,33 +55,21 @@ Further, the code creates a heatmap with the help of the Seaborn library. The he
 
 ![image](https://user-images.githubusercontent.com/75095471/218714793-c392ee68-911e-4978-8494-77afb66e1d71.png)
 
-
+A correlation coefficient is a statistical measure of the degree to which changes to the value of one variable predict change to the value of another. In positively correlated variables, the value increases or decreases in tandem.It can be seen that the episode number has a high correlation with the number of viewers and they have a positive correlation, and on the other hand, the total scores have a negative correlation with the viewers and the episode number, which is a confirmation of the analysis of the previous graph.
 
 Finally, the code creates a horizontal bar chart with the help of the Bokeh library. The bar chart displays the average total score of each director who directed the episodes of the Game of Thrones series. The chart uses the 'Director', 'total_score', and 'counts' columns of the DataFrame. It sorts the data based on the 'total_score' column and plots the average score of each director. The HoverTool function displays the number of episodes each director has directed.
 
 ![image](https://user-images.githubusercontent.com/75095471/218714939-7d080035-01eb-434b-ac11-42c0d7ad402e.png)
 
-
+It can be seen that Neil Marshall is the first, but the number of episodes made by him is two, but Alex Graves has made six episodes and the average score is second. It can be said that Alex Graves was the most worthy director of this series (according to scores).
 
 Lastly, the code creates a vertical bar chart with the help of the Bokeh library. The vertical bar chart displays the average total score of each season of the Game of Thrones series. The chart uses the groupby function of the DataFrame to group the data based on the 'Season' column and calculates the average total score for each season. Finally, the chart plots the data with the help of the vbar function of the Bokeh library.
 
 ![image](https://user-images.githubusercontent.com/75095471/218715032-49d3f8dc-bf18-4c85-b980-b34517bec517.png)
 
+To show the best season of the series, the average score of all the episodes of one season is the best season
 
 
 In conclusion, the given code provides a detailed data analysis of the Game of Thrones TV series. It uses various data visualization techniques to identify the factors affecting the popularity of the series. The analysis shows that the number of episodes, viewership, and total score of each episode have a strong correlation with the popularity of the series. The code also identifies the most popular season, director, and episode of the Game of Thrones series.
 
-
-## Acknowledgement
-This Dataset is created from Wikipedia. Also, the ratings are taken from IMDb, Rotten Tomatoes, Metacritic. If you want to learn more, you can visit the above-mentioned Websites.
-
-Cover Photo by: Wallpaper Cave
-
-## Data visualization and data analysis
-
-### Data visualization
-Bokeh library was used to illustrate the data, and circle, bar plot, pie plot, and line charts were used.
-
-### data analysis
-For data analysis, average criteria and correlation coefficient were used
 
